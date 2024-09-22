@@ -1,22 +1,20 @@
-# Prompt user for task description and priority
-task = input("Enter a task description: ")
-priority = input("Enter the task’s priority (high, medium, low): ").lower()
-time_bound = input("Is the task time-bound? (yes or no): ").lower()
-
-# Process the task based on priority using Match Case
+task = input("Enter your task:")
+priority = input("Priority (high/medium/low):")
+time_bound = input("Is it time-bound? (yes/no):")
 match priority:
     case "high":
-        reminder = f"Task: {task} is of HIGH priority."
+        reminder = (f"{task} is a high priority task ")
     case "medium":
-        reminder = f"Task: {task} is of MEDIUM priority."
+        reminder = (f"{task} is a medium priority task ")
     case "low":
-        reminder = f"Task: {task} is of LOW priority."
+        reminder = (f"{task }is a low quality task ")
     case _:
-        reminder = f"Task: {task} has an UNKNOWN priority."
+        reminder = (f"{task} has an unknown priority")    
 
-# Modify the reminder if the task is time-bound
 if time_bound == "yes":
-    reminder += " This task requires immediate attention today!"
+            reminder += ("that requires immediate attention today!")
+elif time_bound =="no":
+            reminder += (". Consider completing it when you have free time.")
+        
 
-# Provide a customized reminder
-print(reminder)
+print(reminder)            
