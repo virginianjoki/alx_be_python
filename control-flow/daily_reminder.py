@@ -7,7 +7,7 @@ match priority:
     case "medium":
         reminder = (f"{task} is a medium priority task ")
     case "low":
-        reminder = (f"{task }is a low quality task ")
+        reminder = (f"{task } is a low quality task ")
     case _:
         reminder = (f"{task} has an unknown priority")    
 
@@ -17,4 +17,4 @@ elif time_bound =="no":
             reminder += (". Consider completing it when you have free time.")
         
 
-print(reminder)            
+print(f"Reminder: {reminder}")            
