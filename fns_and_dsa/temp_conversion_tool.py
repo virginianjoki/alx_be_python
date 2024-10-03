@@ -12,7 +12,7 @@ def main():
     try:
         temperature = float(temperature)
     except ValueError:
-        raise ValueError("Invalid temperature please enter a numeric value") 
+        raise ValueError("Invalid temperature. Please enter a numeric value") 
 
     unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()  
     while unit not in ['C','F']:
