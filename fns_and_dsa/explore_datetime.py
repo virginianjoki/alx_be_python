@@ -6,9 +6,9 @@ def display_current_datetime():
     current_date = datetime.now()
 
     #format the current date and time   
-    formated_date = current_date.strftime("%Y-%m-%d %H:%m:%s")
+    formatted_date = current_date.strftime("%Y-%m-%d %H:%m:%s")
 
-    print(f" current date and time :{formated_date}")
+    print(f" current date and time :{formatted_date}")
 
 #calculating future date and time
 def calculate_future_date():
@@ -18,9 +18,9 @@ def calculate_future_date():
 
     future_date = current_date + timedelta(days = days_to_add)
     
-    formated_future_date = future_date.strftime("%Y-%m-%d")
+    formatted_future_date = future_date.strftime("%Y-%m-%d")
 
-    print(f"future date: {formated_future_date}")
+    print(f"future date: {formatted_future_date}")
 
     # Main function to run both parts
 def main():
