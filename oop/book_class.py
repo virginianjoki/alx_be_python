@@ -3,11 +3,7 @@ class Book:
         self.tittle = tittle
         self.author = author
         self.year = year
-  #deleting year
-
-    def __del__ (self):
-        self.tittle
-        return "Deleting (tittle of the book)"
+  
   #string representation
 
     def __str__(self):
@@ -15,3 +11,8 @@ class Book:
     
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})".
+    
+  #deleting
+    def __del__(self):
+        self.tittle
+        return f"Deleting{self.tittle}"
