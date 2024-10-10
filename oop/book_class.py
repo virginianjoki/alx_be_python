@@ -1,6 +1,6 @@
 class Book:
-    def __init__(self,tittle,author,year):
-        self.tittle = tittle
+    def __init__(self,title,author,year):
+        self.title = title
         self.author = author
         self.year = year
   
@@ -15,4 +15,4 @@ class Book:
   #deleting
     def __del__(self):
         self.tittle
-        return f"Deleting{self.tittle}"
+        return f"Deleting{self.title}"
