@@ -1,4 +1,5 @@
 from book_class import Book
+import gc
 
 def main():
     # Creating an instance of Book
@@ -12,6 +13,9 @@ def main():
 
     # Deleting a book instance to trigger __del__
     del my_book
+
+    gc.collect()
+    
 
 if __name__ == "__main__":
     main()
