@@ -6,7 +6,7 @@ class Book:
   #deleting year
 
     def __del__ (self):
-        self.tittle()
+        self.tittle
         return "Deleting (tittle of the book)"
   #string representation
 
