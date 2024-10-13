@@ -7,7 +7,7 @@ class Shape:
         return "This is a shape"
     
 class Rectangle(Shape):
-    def _init_(self, length ,width):
+    def __init__(self, length ,width):
         super()._init_()
         self.width = width
         self.length  = length
@@ -16,7 +16,7 @@ class Rectangle(Shape):
         return self.length * self.width
     
 class Circle(Shape):
-    def _init_(self, radius):
+    def __init__(self, radius):
         self.radius = radius
         
     def area(self):
