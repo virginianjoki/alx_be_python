@@ -8,7 +8,7 @@ class Shape:
 
 # Derived class for Rectangle
 class Rectangle(Shape):
-    def _init_(self, length, width):
+    def __init__(self, length, width):
         #Initialize a Rectangle instance with length and width.
         self.length = length
         self.width = width
@@ -19,7 +19,7 @@ class Rectangle(Shape):
 
 # Derived class for Circle
 class Circle(Shape):
-    def _init_(self, radius):
+    def __init__(self, radius):
         #Initialize a Circle instance with radius.
         self.radius = radius
 
